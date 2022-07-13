@@ -77,6 +77,6 @@ function visapay(){
 
     if(g && h && o && w){
         alert('Payment successfully made and it will direct you to the home page in few seconds!');
-        window.location.href ='http://127.0.0.1:5500/Bin%C3%A9age%20Nutrition.html';
+        window.location.href ='https://zc212002.github.io/Web-Fundamental-Final-Project-21062120/Bin%C3%A9age%20Nutrition.html';
     }
 }
