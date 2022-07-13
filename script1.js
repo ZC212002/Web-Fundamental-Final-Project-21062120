@@ -150,6 +150,6 @@ function validation(){
     }
 
     if (x && y && z && k && s && j && f && b && a){
-        window.location.href="http://127.0.0.1:5500/Checkout.html";  
+        window.location.href="https://zc212002.github.io/Web-Fundamental-Final-Project-21062120/Checkout.html";  
     }
 }
