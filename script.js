@@ -42,7 +42,7 @@ function myfunction(){
     
     if ( x  && j){
         alert('You have signed in successfully!')
-        window.location.href="http://127.0.0.1:5500/Bin%C3%A9age%20Nutrition.html";  
+        window.location.href="https://zc212002.github.io/Web-Fundamental-Final-Project-21062120/Bin%C3%A9age%20Nutrition.html";  
     }
 
 } 
