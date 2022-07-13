@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Account</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<style>
+    .outercont{display:flex;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                overflow: auto;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin: 100px 0px 190px 0px;
+            }
+
+    .aligncontent3{ width: 50%;
+                height:600px;
+                border:8px solid #41474a;
+                border-radius:12px;
+                padding: 20px;
+                text-align: center;
+                background-color:#a29a9d;
+                color:#f2f0ec;
+            }
+
+    .loginspec{font-size: 25px;
+                font-family:'Times New Roman', Times, serif;
+                padding:0px;}
+
+    .loginspec h4{font-size: 25px;
+                font-family:'Times New Roman', Times, serif;
+                padding:0px;
+                margin-top:15px;
+                margin-bottom: 15px;
+                margin-right: 80px;
+               }
+
+    .loginspec1 h4{font-size: 25px;
+                font-family:'Times New Roman', Times, serif;
+                padding:0px;
+                margin-top:15px;
+                margin-bottom: 15px;
+                margin-right: 130px;
+               }
+
+    .fillingform input{margin-top:-10px;
+                    padding:20px;
+                    border-radius: 12px;
+                    width:50%;
+                    height: 0px;;
+                    }
+
+    .removeline a{text-decoration: none;}
+
+    .press button{margin:15px;
+                  height:45px;
+                  width:40%;
+                  border-radius: 0px;
+                  background-color: #554853;
+                  font-size: 15px;
+    }
+    
+    .pressn1 button a{margin:15px;
+                  width:42%;
+                  height:45px;
+                  border-radius: 0px;
+                  background-color: #554853;
+                  font-size: 15px;
+                  text-decoration: none;
+                  color:#f2f0ec;
+    }
+
+    .iconsize{width:30px;
+              height:30px;}
+
+    .sameline{justify-content: center;
+              height:auto;
+              }
+</style>
+<script defer src = "script.js"></script>
+</head>
+<div class="logospecs">
+<h1><a href="Bin%C3%A9age%20Nutrition.html">Binéage Nutrition</a></h1>
+</div>
+<div class="navbar">
+    <ul>
+        <li><a href="Nutrition.html">Nutrition</a></li>&emsp;&emsp;&emsp;
+        <li><a href="Bars&Snacks.html">Bars & Snacks</a></li>&emsp;&emsp;&emsp;
+        <li><a href="Clothing&Accessories.html">Clothing & Accessories</a></li>&emsp;&emsp;&emsp;
+        <li><a href="Aboutus.html">About us</a></li>&emsp;&emsp;&emsp;
+        <li><a href="Accountsignup&login.html">Account sign up/login</a></li>&emsp;&emsp;&emsp;
+        <li><a href="Cart.html">Cart</a></li>&emsp;&emsp;&emsp;
+        <li><input class="searchspecs1" type="text" placeholder="Search"><button class="searchspecs2" type="Search">Search</button></li>
+    </ul>
+</div>
+<body class="wallcolor">
+<div class="h2spec">
+<strong><h2>Member login</h2></strong>
+</div>
+
+<div class="outercont">
+<main class="aligncontent3">
+    <div class="boxadj">
+        <div class="loginspec">
+        <h4>*E-mail address</h4>
+        <div class="fillingform">
+        <form id="form" action="/" method="GET">
+            <input id="email" name="email" type="text" placeholder="Enter your email" required>
+        </form>
+        </div>
+        </div>
+
+        <div class="loginspec1">
+        <h4>*Password</h4>
+        </div>
+
+        <div class="fillingform">
+        <form id="form" action="/" method="GET"><input id="password" name="password" type="password" placeholder="Enter you Password"></form>
+        </div>
+
+        <div class="removeline">
+        <p>Not a member yet?&nbsp;<a href="http://127.0.0.1:5500/signup.html">Sign Up Here!</a></p>
+        </div>
+
+        <div class="press">
+        <button onclick="myfunction()" type="submit">Sign in</button>
+        </div>
+    </div>
+
+    <div class="sameline">
+        <div class="loginspec">
+        <h5>Or Continue with</h5>
+
+        <div class="pressn1">
+        <button type="Facebook"><a href="http://surl.li/ckpxg">Facebook</a></button><button type="Google"><a href="http://surl.li/ckpyj">Google</a></button>
+        </div>
+        </div>
+    </div>
+
+</main>
+</div>
+
+<footer class="footerouterspecs" style="margin-top: 200px;">
+        <h3><b>Contact Us & Helps</b></h3>
+    
+        <div class="footercontent">
+        <div class="medialogo"><a href="#"><img src="BNIG.png" alt="IG"></a><i><p><a href="https://www.instagram.com">Instagram</a></p></i></div>
+        <div class="medialogo"><a href="#"><img src="BNFB.png" alt=FB></a><i><p><a href="https://www.facebook.com/">Facebook</a></p></i></div>
+        <div class="medialogo"><a href="#"><img src="BNEMAIL.png" alt="email"></a><i><p><a href="https://mail.google.com/mail/u/0/#inbox">E-mail</a></p></i></div>
+        </div>
+    
+        <div class="outer">
+        <div class="country">
+        <a href="#"><img src="BNMY.png" alt="MY"></a>
+        <small><i>Copyright &copy; Binéage Nutrition</i></small>
+        <div class="payment">  
+            <i>Pay Securely with</i>
+                <a href="#"><img src="BNVISA.png" alt="Visa"></a> 
+                <a href="#"><img src="BNMASTERCARD.png" alt="Mastercard"></a> 
+                <a href="#"><img src="BN EW.png" alt="ewallet"></a> 
+        </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

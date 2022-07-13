@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cart</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<style>
+    .outercont{display:flex;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                overflow: auto;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+    .aligncont1{ width:50%;
+                height:auto;
+                padding: 20px;
+                border:8px solid #41474a;
+                border-radius:12px;
+                text-align: center;
+                background-color:#a29a9d;
+                color:#f2f0ec;
+                }
+
+
+    .aligncont2{ width:50%;
+                height:450px;
+                margin-top:200px;
+                margin-left: 85px;
+                margin-right:85px;
+                padding-bottom: 10px;
+                border:8px solid #41474a;
+                border-radius:12px;
+                text-align: center;
+                background-color:#a29a9d;
+                color:#f2f0ec;
+                }
+    
+    .shipdes h3{background-color:#72747a;
+            margin:-20px;
+            height:50px;}
+
+    .shipdes h2{background-color:#72747a;
+            padding-top:20px;
+            margin:-20px;
+            margin-bottom:20px;
+            border-bottom: 5px solid #41474a;
+            height:50px;}
+
+    .shipdes1 h3{background-color:#72747a;
+            margin:0px;
+            height:50px;}
+
+    .shipdes1 h2{background-color:#72747a;
+            padding-top:20px;
+            margin:0px;
+            margin-bottom:20px;
+            border-bottom: 5px solid #41474a;
+            height:50px;}
+
+    .ship{font-size: 25px;
+                font-family:'Times New Roman', Times, serif;
+                padding:0px;}
+
+    .ship h4{font-size: 25px;
+                font-family:'Times New Roman', Times, serif;
+                padding:0px;
+                margin-top:15px;
+                margin-bottom: 15px;
+                margin-right: 80px;
+               }
+
+    .filform input{margin-top:-10px;
+                    padding:20px;
+                    border-radius: 12px;
+                    width:50%;
+                    height: 0px;
+                    }
+
+    .PO li{margin-bottom:30px;
+    }
+
+    .press a{margin:15px;
+                  height:45px;
+                  width:40%;
+                  border-radius: 0px;
+                  background-color: #554853;
+                  color:#f2f0ec;
+                  text-decoration: none;
+                  font-size: 15px;
+    }
+
+    .navbarcart{background-color: #41474a; 
+        font-size:20px; 
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        margin: -10px -8px 10px -8px;
+        border: 5px ;
+        padding: 0px;
+        border-bottom: 5px solid #81847d;
+        border-left: 5px solid #81847d;
+        border-right: 5px solid #81847d;
+        border-top: 5px solid #81847d;
+        border-radius: 3.5px;
+        width: auto;
+        height: auto;
+        }
+
+    .navbarcart ul{list-style-type:none;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));} 
+
+    .navbarcart ul li{display: inline;} 
+
+    .navbarcart ul li a{text-decoration:none; 
+        color:#f2f0ec;}
+
+    @media(max-width:992px){
+        .navbarcart{
+            overflow-x: scroll;
+            display:flex;
+        }
+    }
+
+</style>
+<script defer src = "script1.js"></script>
+</head>
+<body class="wallcolor">
+<div class="logospecs">
+<h1><a href="Bin%C3%A9age%20Nutrition.html">Binéage Nutrition</a></h1>
+</div>
+<div class="navbarcart">
+    <ul>
+        <li><a href="Nutrition.html">Nutrition</a></li>
+        <li><a href="Bars&Snacks.html">Bars & Snacks</a></li>
+        <li><a href="Clothing&Accessories.html">Clothing & Accessories</a></li>
+        <li><a href="Aboutus.html">About us</a></li>
+        <li><a href="Accountsignup&login.html">Account sign up/login</a></li>
+        <li><a href="Cart.html">Cart</a></li>
+        <li><input class="searchspecs1" type="text" placeholder="Search"><button class="searchspecs2" type="Search">Search</button></li>
+    </ul>
+</div>
+<div class="h2spec">
+<h2>Cart</h2>
+</div>
+<main class="outercont" >
+    <div class="aligncont1">
+        <div class="shipdes">
+        <strong><h3>Shipping</h3></strong>
+        </div>
+
+        <div class="shipdes">
+        <h2>SHIPPING ADDRESS</h2>
+        </div>
+
+        <div class="ship">
+        <h4>E-mail address</h4>
+        </div>
+        <div class="filform">
+        <form action="/" method="GET"><input id="email" name="email" type="text" placeholder="Email" required></form>
+        </div>
+
+        <div class="ship">
+        <h4>First name</h4>
+        </div>
+        <div class="filform">
+        <form action="/" method="GET"><input id="Firstname" name="Firstname" type="text" placeholder="Enter your First name"required></form>
+        </div>
+
+        <div class="ship">
+        <h4>Last name</h4>
+        </div>
+        <div class="filform">
+        <form action="/" method="GET"><input id="Lastname" name="Lastname" type="text" placeholder="Enter your Last name" required></form>
+        </div>
+
+        <div class="ship">
+        <h4>Street address</h4>
+        </div>
+        <div class="filform">
+        <form action="/" method="GET"><input id="Streetaddress" name="Streetaddress" type="text" placeholder="Enter your Street address" required></form>
+        </div>
+
+        <div class="ship">
+        <h4>City</h4>
+        </div>
+        <div class="filform">
+        <form action="/" method="GET"><input id="City" name="City" type="text" placeholder="Enter your City" required></form>
+        </div>
+
+        <div class="ship">
+        <h4>State/Province</h4>
+        </div>
+        <div class="filform">
+        <form action="/" method="GET"><input id="StateProvince" name="StateProvince" type="text" placeholder="Enter your State/Province" required></form>
+        </div>
+
+        <div class="ship">
+        <h4>Zip/Postal Code</h4>
+        </div>
+        <div class="filform">
+        <form action="/" method="GET"><input id="PostalCode" name="PostalCode" type="text" placeholder="Enter your Zip/Postal Code" required></form>
+        </div>
+
+        <div class="ship">
+        <h4>Country</h4>
+        </div>
+        <div class="filform">
+        <form action="/" method="GET"><input id="Country" name="Country" type="text" placeholder="Enter your Country" required></form>
+        </div>
+
+        <div class="ship">
+        <h4>Mobile Number</h4>
+        </div>
+        <div class="filform">
+        <form action="/" method="GET"><input id="MobileNumber" name="MobileNumber" type="text" placeholder="Enter your Mobile Number" required></form>
+        </div>
+
+        <div class="press">
+        <button onclick="validation()" type="Done">Proceed to Checkout</button> 
+        </div>
+    </div>
+</main>
+
+<br><footer class="footerouterspecs">
+    <h3><b>Contact Us & Helps</b></h3>
+
+    <div class="footercontent">
+    <div class="medialogo"><a href="#"><img src="BNIG.png" alt="IG"></a><i><p><a href="https://www.instagram.com">Instagram</a></p></i></div>
+    <div class="medialogo"><a href="#"><img src="BNFB.png" alt=FB></a><i><p><a href="https://www.facebook.com/">Facebook</a></p></i></div>
+    <div class="medialogo"><a href="#"><img src="BNEMAIL.png" alt="email"></a><i><p><a href="https://mail.google.com/mail/u/0/#inbox">E-mail</a></p></i></div>
+    </div>
+
+    <div class="outer">
+    <div class="country">
+    <a href="#"><img src="BNMY.png" alt="MY"></a>
+    <small><i>Copyright &copy; Binéage Nutrition</i></small>
+    <div class="payment">  
+        <i>Pay Securely with</i>
+            <a href="#"><img src="BNVISA.png" alt="Visa"></a> 
+            <a href="#"><img src="BNMASTERCARD.png" alt="Mastercard"></a> 
+            <a href="#"><img src="BN EW.png" alt="ewallet"></a>  
+    </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Visa</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<style>
+    .revert{background-color: #242223; 
+               margin: -10px -8px 10px -8px;
+               border-top: 5px solid #81847d;
+               border-left: 5px solid #81847d;
+               border-right: 5px solid #81847d;
+               border-radius: 3.5px;
+               padding: 10px 15px 10px 15px;
+               font-family: "Times New Roman", Times, serif;}
+
+    .revert a{color:#f2f0ec;
+            text-decoration: none;}
+
+    .outercontadj{display:flex;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        overflow: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+
+    .aligncontmethod{ width:50%;
+            height:auto;
+            padding: 0px;
+            border:8px solid #41474a;
+            border-radius:12px;
+            text-align: center;
+            background-color:#a29a9d;
+            color:#f2f0ec;
+            }
+
+    .headstyle{font-size:20px;
+               font-family: 'Times New Roman', Times, serif;
+    }
+    .adj img {width:45%;
+            height:170px;
+            margin-bottom:10px;}
+
+    .filpay input{padding:20px;
+                margin-left:15px;
+                width:15%;
+                height: 0px;
+                }
+
+    .filpay button{background-color: #554853;
+                    font-size: 15px;
+                    margin:15px;
+                  height:45px;
+                  width:15%;
+                  border-radius: 10px;}
+</style>
+<script defer src = "script2.js"></script>
+</head>
+<div class="revert">
+    <h1><a href="http://127.0.0.1:5500/Checkout.html">Back to Payment Option</a></h1>
+</div>
+<body class="wallcolor">
+<div class="outercontadj">
+<div class="aligncontmethod">
+    <div class="headstyle">
+        <h2>Confirm Purchases</h2>
+    </div>
+    <div class="adj">
+        <a href="#"><img src="BN Visa&MasterCard.jpg" alt="Visa&Master"></a>
+    </div>
+    <div class="filpay">
+        <input id="CardNumber" name="CardNumber" type="text" placeholder="Card Number" required><input id="HolderName" name="HolderName" type="text" placeholder="Holder Name" required> 
+    </div>
+    <div class="filpay">
+        <input id="MY" name="Month Year" type="text" placeholder="MM/YY" required><input id="CVV" name="CVV" type="text" placeholder="CVV" required><button onclick="visapay()" type="submit">Submit</button>
+    </div>
+</div>
+</div>
+</body>
+</html>
